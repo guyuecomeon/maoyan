@@ -1,0 +1,39 @@
+
+      <style>
+        #hot_movie_propdiv {
+            position: relative;
+        }
+
+        #hot_movie_addBtn {
+            position: absolute;
+            bottom: 10px;
+            right: 80px;
+        }
+
+        #hot_movie_cancelBtn {
+            position: absolute;
+            bottom: 10px;
+            right: 10px;
+        }
+    </style>
+
+    <div id="hot_movie_box"></div>
+    <a id="hot_movie_addEventBtn" href="#" class="easyui-linkbutton" data-options="iconCls:'icon-add'">增加电影</a>
+    <a id="hot_movie_removeBtn" href="#" class="easyui-linkbutton" data-options="iconCls:'icon-remove'">移除电影</a>
+    <input id="hot_movie_searchEven" class="easyui-searchbox" style="width:300px;" data-options="menu:'#hotMovieList'"></input>
+    <a id="hotMovieNew" href="#" class="easyui-linkbutton" data-options="iconCls:'icon-reload'">刷新</a>
+    <div id="hotMovieList" style="width:120px">
+        <div id="hotMovieNum" data-options="name:'hotShowName'">电影名</div>
+        <div id="hotMovieType" data-options="name:'hotShowType'">类型</div>
+        <div id="hotMovieArea" data-options="name:'hotShowArea'">区域</div>
+    </div>
+    <table id="hot_movie_tab"></table>
+
+
+    <div id="hot_movie_propdiv" style="display:none">
+        <input id="fb" type="text" style="width:300px;display:none;">
+        <table id="hot_movie_proptab"></table>
+
+        <a id="hot_movie_addBtn" href="#" class="easyui-linkbutton" data-options="iconCls:'icon-add'">添加</a>
+        <a id="hot_movie_cancelBtn" href="#" class="easyui-linkbutton" data-options="iconCls:'icon-cancel'">取消</a>
+    </div>

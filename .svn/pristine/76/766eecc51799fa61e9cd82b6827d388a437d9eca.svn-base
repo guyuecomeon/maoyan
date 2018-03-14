@@ -1,0 +1,23 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+body{
+    /* background-color: wheat; */
+    background-image:url(../image/31e438ff45c5112de916674035cc4c87.jpg) ;
+    background-position: center;
+}
+    
+#dd{
+    width: 174px;
+    height: 240px;
+    margin: auto;
+    margin-top: 100px;
+    /* border: 1px solid red; */
+}
+#user_rog_btn{
+    margin-top: 20px;
+    margin-left: 60px;
+    color: red;
+}
+

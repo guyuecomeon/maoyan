@@ -1,0 +1,27 @@
+<!-- 增加电影弹窗 -->
+<div id="addMovie">
+    <!-- 增加电影datagrid -->
+    <table id="addMovieTable"></table>
+</div>
+<!-- 主页面表格 -->
+<div id="matchTable">
+</div>
+<!-- 主页面功能按钮 -->
+<div id="tools">
+    <a id="addMovieBtn" class="easyui-linkbutton" data-options="iconCls:'icon-add'">增加电影</a>
+    <a id="delMovieBtn" class="easyui-linkbutton" data-options="iconCls:'icon-remove'">移除电影</a>
+    <input id="ss" class="easyui-searchbox"></input>
+    <div id="mm" style="width:120px">
+        <div data-options="name:'movieName'">电影名称</div>
+        <div data-options="name:'movieEname'">英文名</div>
+    </div>
+    <a id="refresh" class="easyui-linkbutton" data-options="iconCls:'icon-reload'">刷新</a>
+</div>
+<!-- 增加院线弹框 -->
+<div id="addCinemaDia">
+    <table id="addCinemaTa"></table>
+</div>
+<!-- 增加放映厅弹框 -->
+ <div id="addHallDia">
+    <table id="addHallTa"></table>
+</div>

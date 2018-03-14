@@ -1,0 +1,75 @@
+<style>
+    #border,
+    #border_1 {
+        width: 260px;
+        height: 180px;
+        margin: auto;
+        border: 1px solid #ccc;
+    }
+
+    #message_rel_comments,
+    #message_rel_text,
+    #message_rel_comments_1,
+    #message_rel_text_1 {
+        width: 200px;
+        height: 100px;
+        margin: auto;
+        border: 1px solid #ccc;
+    }
+
+    #message_up_file,
+    #message_up_file_1 {
+        width: 180px;
+        margin-bottom: 20px;
+    }
+</style>
+
+<!-- ------------------------------------------------- -->
+<!-- 弹出增加对话框 -->
+<div id="message_add_btn" style="display:none;text-align:center">
+    <p><label>电影名称：</label><input id="message_movie_name" type="text"></p>
+    <p><label>发稿时间：</label><input id="message_up_time" type="text"></p>
+    <input type="hidden" name="imgSrc" id="message_imgSrc">
+    <p id="border" style="display:none">
+        <input type="file" id="message_up_file" name="inputFile">
+        <input type="submit" id="message_btn" value="上传" />
+        <textarea id="message_rel_text"></textarea>
+    </p>
+    <button id="message_pic_write_btn">新增文图</button>
+    <p id="box" style="display:none">
+        <textarea id="message_rel_comments"></textarea>
+    </p>
+    <p><button id="message_newAdd_btn">新增评论</button></p>
+</div>
+<!-- --------------------------------------------------------------- -->
+<!-- 弹出修改对话框 -->
+<div id="message_update_btn" style="display:none;text-align:center">
+    <p><label>电影名称：</label><input id="message_movie_name_1" type="text"></p>
+    <p><label>发稿时间：</label><input id="message_up_time_1" type="text"></p>
+    <input type="hidden" name="imgSrc_1" id="message_imgSrc_1">
+    <p id="border_1" style="display:none">
+        <input type="file" id="message_up_file_1" name="inputFile">
+        <input type="submit" id="message_btn_1" value="上传" />
+        <textarea id="message_rel_text_1"></textarea>
+    </p>
+    <button id="message_pic_write_btn_1">修改文图</button>
+    <p id="box_1" style="display:none">
+        <textarea id="message_rel_comments_1"></textarea>
+    </p>
+    <p><button id="message_newUpdate_btn">修改评论</button></p>
+</div>
+<!-- ------------------------------------------------------------------------------- -->
+<table id="message_mytab">
+    <!-- 表格工具栏 -->
+    <a id="btn_1" href="#" class="easyui-linkbutton" data-options="iconCls:'icon-add'">增加咨询</a>
+    <a id="btn_2" href="#" class="easyui-linkbutton" data-options="iconCls:'icon-remove'">删除咨询</a>
+    <a id="btn_3" href="#" class="easyui-linkbutton" data-options="iconCls:'icon-edit'">修改咨询</a>
+    <input id="message_ss" type="text"></input>
+    <div id="message_mm" style="width:120px">
+        <div data-options="name:'all'">标题</div>
+        <div data-options="name:'time'">发稿时间</div>
+    </div>
+    <a id="btn_4" href="#" class="easyui-linkbutton" data-options="iconCls:'icon-reload'">刷新咨询</a>
+    <!-- 表格内容添加到table中-->
+</table>
+<!-- ------------------------------------------------------------------ -->

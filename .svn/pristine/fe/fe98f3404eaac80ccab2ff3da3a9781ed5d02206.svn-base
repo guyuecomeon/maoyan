@@ -1,0 +1,56 @@
+<style>
+    #movie-add-suc {
+        margin-left: 30px;
+        margin-top: 20px;
+        margin-bottom: 10px;
+    }
+
+    #movie-add-rep {
+        float: right;
+        margin-right: 30px;
+        margin-top: 20px;
+        margin-bottom: 10px;
+    }
+</style>
+
+<table id="movie-dg">
+</table>
+<div id="movie-add" style="display:none">
+
+    <p>&nbsp&nbsp&nbsp&nbsp中文名：<input id="ipt1" class="easyui-validatebox" missingMessage="" data-options="required:true" /></p>
+    <p>&nbsp&nbsp&nbsp&nbsp英文名：<input id="ipt2" class="easyui-validatebox" missingMessage="" data-options="required:true" /></p>
+    <p>&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp类型：<input id="ipt3" class="easyui-validatebox" missingMessage="" data-options="required:true"
+        /></p>
+    <p>&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp评分：<input id="ipt4" class="easyui-validatebox" missingMessage="" data-options="required:true"
+        /></p>
+    <p>&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp演员：<input id="ipt5" class="easyui-validatebox" missingMessage="" data-options="required:true"
+        /></p>
+    <p>&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp想看：<input id="ipt6" class="easyui-validatebox" missingMessage="" data-options="required:true"
+        /></p>
+    <p>&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp区域：<input id="ipt7" class="easyui-validatebox" missingMessage="" data-options="required:true"
+        /></p>
+    <p>&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp年代：<input id="ipt8" class="easyui-validatebox" missingMessage="" data-options="required:true"
+        /></p>
+    <p>影片时间：<input id="ipt9" class="easyui-validatebox" missingMessage="" data-options="required:true" /></p>
+    <p>上映时间：<input id="ipt10" class="easyui-validatebox" missingMessage="" data-options="required:true" /></p>
+    <p>&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp简介：<input id="ipt11" class="easyui-validatebox" missingMessage="" data-options="required:true"
+        /></p>
+    <p>&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp票房：<input id="ipt12" class="easyui-validatebox" missingMessage="" data-options="required:true"
+        /></p>
+    <p>&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp图片：<input id="ipt13" style="width:100px; height:30px" type="hidden">
+
+    </p>
+    <input id="movie-upload" type="file" name="inputFile" multiple />
+    <input id="movie-movieSubBtn" type="submit" value="上传">
+    <button id="movie-add-suc">确定</button>
+    <button id="movie-add-rep">取消</button>
+</div>
+<div id="movie-div" style="display:none">
+    <input id="movie-ss"></input>
+    <div id="movie-mm" style="width:120px">
+        <div data-options="name:'all'">电影名</div>
+        <div data-options="name:'sports'">类型</div>
+        <div data-options="name:'s1'">英文名</div>
+    </div>
+
+</div>

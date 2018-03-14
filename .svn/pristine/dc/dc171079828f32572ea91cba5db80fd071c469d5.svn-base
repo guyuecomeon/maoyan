@@ -1,0 +1,47 @@
+<div style="position: absolute;top:34px;left:200px;  z-index: 99">
+    <!-- 查询 -->
+    <div id="serach">
+        <input id="box2" class="easyui-searchbox" style="width:300px" data-options="prompt:'请输入你要查询的关键字',menu:'#mm'"></input>
+        <div id="mm" style="width:120px">
+            <div id="search_cinema2" data-options="name:'search_cinema',iconCls:'icon-ok'">影院</div>
+            <div id="search_addr2" data-options="name:'search_addr',iconCls:'icon-ok'">地址</div>
+        </div>
+        <a id="nulls" href="#" class="easyui-linkbutton" data-options="iconCls:'icon-reload'">刷新</a>
+    </div>
+</div>
+<!-- 增加页面 -->
+<div id="dd" style="display:none;width:500px" data-options="title:'我的对话框'">
+    <div style="margin-left:190px;width:350px;height:450px;margin-top: 100px;">
+        <form action="newform" method="post" id="newmoveform">
+            <p>院线：<input type="text" name="yardName" id="addYardName"></p>
+            <p>地址：<input type="text" name="address" id="addRess"></p>
+            <p>电话：<input type="text" name="phone" id="addPhone"></p>
+            <p>网址：<input type="text" name="website" id="addWebsite"></p>
+        </form>
+        <!-- 增加的影厅 -->
+        <div id="chooseSeat">
+           
+        </div>
+        <a style="margin-left:65px;margin-bottom:15px" id="seatSure" href="#" class="easyui-linkbutton" data-options="iconCls:'icon-add'">增加影厅座位</a>
+
+
+    </div>
+</div>
+<!-- 修改页面 -->
+<div id="s" style="display:none;width:500px">
+    <div style="margin-left:190px;width:350px;height:450px;margin-top: 100px; ">
+        <p>院线：<input type="text" name="yardName" id="editYardName"></p>
+        <p>地址：<input type="text" name="ress" id="editRess"></p>
+        <p>电话：<input type="text" name="phone" id="editPhone"></p>
+        <p>网址：<input type="text" name="website" id="editWebsite"></p>
+    </div>
+    <div id="changechooseSeat">
+            
+         </div>
+</div>
+<div>
+    <!-- 主表格 -->
+    <table id="dg" style="position: relative">
+
+    </table>
+</div>

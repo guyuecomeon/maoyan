@@ -1,0 +1,37 @@
+<style>
+    #reflect_propdiv {
+        position: relative;
+    }
+
+    #reflect_addBtn {
+        position: absolute;
+        bottom: 10px;
+        right: 80px;
+    }
+
+    #reflect_cancelBtn {
+        position: absolute;
+        bottom: 10px;
+        right: 10px;
+    }
+</style>
+
+<div id="reflect_box"></div>
+<a id="reflect_addEventBtn" href="#" class="easyui-linkbutton" data-options="iconCls:'icon-add'">增加电影</a>
+<a id="reflect_removeBtn" href="#" class="easyui-linkbutton" data-options="iconCls:'icon-remove'">移除电影</a>
+<input id="reflect_searchEven" class="easyui-searchbox" style="width:300px" data-options="menu:'#reflectList'"></input>
+<a id="reflectNew" href="#" class="easyui-linkbutton" data-options="iconCls:'icon-reload'">刷新</a>
+<div id="reflectList" style="width:120px">
+    <div id="reflectNum" data-options="name:'hotShowName'">电影名</div>
+    <div id="reflectType" data-options="name:'hotShowType'">类型</div>
+    <div id="reflectArea" data-options="name:'hotShowArea'">区域</div>
+</div>
+<table id="reflect_tab"></table>
+
+
+<div id="reflect_propdiv" style="display:none">
+    <table id="reflect_proptab"></table>
+    <a id="reflect_addBtn" href="#" class="easyui-linkbutton" data-options="iconCls:'icon-add'">添加</a>
+    <a id="reflect_cancelBtn" href="#" class="easyui-linkbutton" data-options="iconCls:'icon-cancel'">取消</a>
+
+</div>
